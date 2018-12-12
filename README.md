@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This short lesson summarizes key takeaways from section 30
+This short lesson summarizes key takeaways from section 31
 
 ## Objectives
 You will be able to:
@@ -13,11 +13,12 @@ You will be able to:
 ## Key Takeaways
 
 The key takeaways from this section include:
-* Parameters are the "settings" for a given model - for a linear model in the form y = mx + c, the parameters are m and c
-* Maximum Likelihood Estimation returns the values for the parameters of a model that maximize the chance that the observations were created by that model
-* When calculating maximum likelihood we often use a log likelihood to simplify calculations (allowing us to decompose products into simpler sums)
-* It's important to consider algorithmic bias when building models as biased observations will tend to generate a biased model (if banks are less likely to provide loans to African Americans, a model trained on such data is likely to perpetuate that bias)
-* Gradient descent is a method for traversing a cost curve to find a local minima or maxima (or saddle point)
-* A sigmoid function can be used to map a linear regression model to a range from 0 to 1, allowing for a logistic regression which can be used as a binary classifier
-* A regularization parameter can be used to apply a cost to overfitting, reducing the likelihood of overfitting your model
-
+* Probably Approximately Correct (PAC) learning theory provides a mathematically rigorous definition of what machine learning is
+* The PAC is a learning model which is characterized by learning from examples
+* Decision trees can be used for both categorization and regression tasks
+* They are a powerful and interpretable technique for many machine learning problems (especially when combined with ensemble methods)
+* Decision trees are a form of Directed Acyclic Graph (DAG) - you traverse them in a specified direction, and there are no "loops" in the graphs to go backwards
+* Algorithms for generating decision trees are designed to maximize the information gain from each split
+* A popular algorithm for generating decision trees is ID3 - the Iterative Dichotomiser 3 algorithm
+* There are a range of pruning hyperparameters for decision trees to reduce overfitting - including maximum depth, minimum samples leaf with split, minimum leaf sample size, maximum lead nodes and maximum features
+* CART (Classification and Regression Trees) trees can be used for regression tasks
